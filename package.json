@@ -1,0 +1,33 @@
+{
+  "name": "node_test",
+  "version": "1.0.0",
+  "engines": {
+    "node": "6.10.x",
+    "npm": "3.10.x"
+  },
+  "description": "package json file for firebase",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sandra-ivana",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "firebase-admin": "^4.0.3",
+    "request": "^2.79.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandraIvana/city_park_script.git"
+  },
+  "keywords": [
+    "heroku"
+  ],
+  "bugs": {
+    "url": "https://github.com/sandraIvana/city_park_script/issues"
+  },
+  "homepage": "https://github.com/sandraIvana/city_park_script#readme"
+}
