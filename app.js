@@ -14,6 +14,7 @@ console.log(request);*/
 var firebase = require('firebase-admin');
 var request = require('request');
 var express = require('express');
+var http = require("https");
 var app = express();
 app.listen(process.env.PORT || 5000);
 
@@ -133,3 +134,7 @@ function sendNotificationToRoom(room, message, onSuccess) {
 
 // start listening
 listenForNotificationRequests();
+
+setInterval(function() {
+    http.get("https://aqueous-depths-31230.herokuapp.com/");
+}, 300000);
