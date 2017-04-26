@@ -15,6 +15,7 @@ var firebase = require('firebase-admin');
 var request = require('request');
 var express = require('express');
 var http = require("https");
+
 var app = express();
 app.listen(process.env.PORT || 5000);
 
@@ -22,7 +23,9 @@ var API_KEY = "AIzaSyBajjfGLo3Cao6swyq-vXvhwEWVHFB-qZE"; // Your Firebase Cloud 
 
 // Fetch the service account key JSON file contents
 var serviceAccount = require("./city-park-ba446-firebase-adminsdk-id4ua-205f02de92.json");
-
+setInterval(function() {
+    http.get("https://cryptic-meadow-22014.herokuapp.com/");
+}, 300000);
 
 // Initialize the app with a service account, granting admin privileges
 firebase.initializeApp({
@@ -135,6 +138,3 @@ function sendNotificationToRoom(room, message, onSuccess) {
 // start listening
 listenForNotificationRequests();
 
-setInterval(function() {
-    http.get("https://aqueous-depths-31230.herokuapp.com/");
-}, 300000);
