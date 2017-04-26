@@ -24,7 +24,7 @@ var API_KEY = "AIzaSyBajjfGLo3Cao6swyq-vXvhwEWVHFB-qZE"; // Your Firebase Cloud 
 // Fetch the service account key JSON file contents
 var serviceAccount = require("./city-park-ba446-firebase-adminsdk-id4ua-205f02de92.json");
 setInterval(function() {
-    http.get("https://cryptic-meadow-22014.herokuapp.com/");
+    http.get("https://powerful-scrubland-66985.herokuapp.com/");
 }, 300000);
 
 // Initialize the app with a service account, granting admin privileges
